@@ -1,0 +1,51 @@
+.logo {
+  height: 75px;
+  float: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.main-nav {
+  float: right;
+
+  li {
+    float: left;
+    margin: 10px;
+
+    a {
+      color: $blue;
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      background-color: white;
+      }
+
+    a:hover {
+      color: white;
+      background-color: $blue;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  .drop-nav {
+    position: absolute;
+    display: none;
+
+    li {
+      margin: 0px;
+      width: auto;
+    }
+  }
+}
+
+.dropdown:hover .drop-nav{
+display: block;
+}

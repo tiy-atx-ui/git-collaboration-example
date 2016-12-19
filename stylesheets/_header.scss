@@ -1,0 +1,43 @@
+@mixin absolutecenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+}
+
+header {
+  height: 500px;
+  position: relative;
+  background: rgba(255, 231, 52, 0.6);
+}
+
+video {
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -100;
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  @include container;
+}
+
+.headercontent {
+  clear: both;
+  @include absolutecenter;
+  text-align: center;
+
+  p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}

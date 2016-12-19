@@ -1,0 +1,61 @@
+@import 'normalize';
+@import 'text';
+@import 'nav';
+@import 'header';
+
+@mixin verticalcenter {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+.ourpledge {
+  @include container;
+  background-color: $blue;
+  height: 300px;
+
+  h2, p{
+    color: white;
+    text-align: center;
+  }
+
+}
+
+.pledgecontent {
+  @include verticalcenter;
+}
+
+.mainbody {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
+  text-align: center;
+
+  article {
+    width: 20.6%;
+    display: inline-block;
+    background-color: white;
+    vertical-align: top;
+    margin: 30px 1%;
+    padding: 1%;
+    padding-top: 30px;
+  }
+}
+
+footer{
+  border-top: 1px solid gray;
+  padding-top: 20px;
+
+  p {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: $blue;
+  }
+}
+
+@import 'media';
